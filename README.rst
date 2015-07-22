@@ -1,8 +1,13 @@
 emailsms
 ===========
 
-Module for sending SMS via email SMS gateways. Requires the phone service
-provider of the recipient to be known.
+Module for sending SMS via email SMS gateways. Requires an email account to
+send from, and for the phone service provider of the recipient to be known.
+
+Email SMS gateways are unreliable at best. This is not a suitable method for
+sending texts for any production use. This is, however, a free and easy way
+to prototype SMS-based services.
+
 
 Usage
 -----
@@ -10,13 +15,16 @@ Usage
 ::
 
     >>> import emailsms
+    >>> smtp = emailsms.gmail_smtp('foo@gmail.com', 'password')
+    >>> emailsms.send(smtp, '0000000000', "Hi it's me", 'Verizon')
+    >>> print emailsms.carriers
 
 
 
 Contributing
 ------------
 
-Feel free to fork me and create a pull request at
+Pull requests welcome!
 https://bitbucket.org/socos_me/emailsms
 
 

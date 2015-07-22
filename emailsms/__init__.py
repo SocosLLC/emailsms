@@ -148,3 +148,6 @@ gateway_for_carrier = {
     'Vodafone UK': 'vodafone.net',
     'Wyndtell': 'wyndtell.com'
 }
+
+carriers = gateway_for_carrier.keys()
+
