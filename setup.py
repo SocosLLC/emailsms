@@ -21,8 +21,8 @@ setup(
     long_description=(read('README.rst')),
     author='Brandon Istenes',
     author_email='bistenes@socos.me',
-    url='',
-    download_url='',
+    url='https://bitbucket.org/socos_me/emailsms',
+    download_url='https://bitbucket.org/socos_me/emailsms/get/0.1.tar.gz',
     keywords=['sms', 'texting', 'phone', 'gateway', 'email'],
     classifiers=['Development Status :: 4 - Beta',
                  'License :: OSI Approved :: Apache Software License']
