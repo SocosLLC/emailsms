@@ -1,22 +1,16 @@
-""" emailsms/__init__.py
-
-    Copyright 2015 Socos LLC
-"""
+# emailsms/__init__.py
+#
+# Copyright 2015 Socos LLC
+#
 
 import argparse
 import smtplib
 
-def send(smtp, phone, text, carrier, title='txt'):
+def send(smtp, from_address, phone, text, carrier):
     assert isinstance(smtp, smtplib.SMTP)
     assert carrier in gateway_for_carrier.keys()
-    address = '{}@{}'.format(phone, gateway_for_carrier[carrier])
-    smtp.sendmail(title, address, text)
-
-def gmail_smtp(username, password):
-    smtp = smtplib.SMTP("smtp.gmail.com", 587)
-    smtp.starttls()
-    smtp.login(username, password)
-    return smtp
+    to_address = '{}@{}'.format(phone, gateway_for_carrier[carrier])
+    smtp.sendmail(from_address, to_address, text)
 
 gateway_for_carrier = {
     '3 River Wireless': 'sms.3rivers.net',

@@ -1,7 +1,7 @@
-""" setup.py
-
-    Copyright 2015 Socos LLC
-"""
+# setup.py
+#
+# Copyright 2015 Socos LLC
+#
 
 import os
 
@@ -15,14 +15,14 @@ def read(*paths):
 setup(
     name='emailsms',
     packages=['emailsms'],
-    version='0.1',
+    version='0.2',
     license='Apache License 2.0',
     description='Send text messages using email SMS gateways.',
     long_description=(read('README.rst')),
     author='Brandon Istenes',
     author_email='bistenes@socos.me',
     url='https://bitbucket.org/socos_me/emailsms',
-    download_url='https://bitbucket.org/socos_me/emailsms/get/0.1.tar.gz',
+    download_url='https://bitbucket.org/socos_me/emailsms/get/0.2.tar.gz',
     keywords=['sms', 'texting', 'phone', 'gateway', 'email'],
     classifiers=['Development Status :: 4 - Beta',
                  'License :: OSI Approved :: Apache Software License']

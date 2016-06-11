@@ -14,9 +14,15 @@ Usage
 
 ::
 
+    >>> yahoo_smtp_server = "smtp.mail.yahoo.com"
     >>> import emailsms
-    >>> smtp = emailsms.gmail_smtp('foo@gmail.com', 'password')
-    >>> emailsms.send(smtp, '0000000000', "Hi it's me", 'Verizon')
+    >>> import smtplib
+    >>> from_address = 'foo@gmail.com
+    >>> smtp = smtplib.SMTP(yahoo_smtp_server, 587)
+    >>> smtp.starttls()
+    >>> smtp.login(username, password)
+    >>> smtp = emailsms.gmail_smtp(from_address, 'password')
+    >>> emailsms.send(smtp, from_address, '0000000000', "Hi it's me", 'Verizon')
     >>> print emailsms.carriers
 
 
