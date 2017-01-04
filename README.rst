@@ -31,15 +31,16 @@ Contributing
 ------------
 
 Pull requests welcome!
-https://bitbucket.org/socos_me/emailsms
+https://github.com/SocosLLC/emailsms
 
 
 About Socos
 -----------
 
-Socos LLC is the only organization currently taking naturalistic student experiences as the basis for
-assessments. The solution to improving education and the learning gap is to close the educational
-loop, and provide relevant feedback to educators and parents on what they can do in naturalistic
-setting to improve life-outcomes. 
+Socos LLC is the company behind `Muse <https://muse.socoslearning.com>`_.
 
-Learn more at http://www.socoslearning.com/
+Muse brings your child's everyday experiences to life and supports
+their development through research-based activities. Muse gives you
+insights into your child's development and shows you what you can do
+each day to support their growth.
+
